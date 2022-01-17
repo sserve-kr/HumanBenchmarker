@@ -92,6 +92,12 @@
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.label23 = new System.Windows.Forms.Label();
             this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
+            this.LoginControl = new System.Windows.Forms.GroupBox();
+            this.LoginEnabled = new System.Windows.Forms.CheckBox();
+            this.login_id = new System.Windows.Forms.TextBox();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.login_pw = new System.Windows.Forms.TextBox();
             this.ReactionTimeSettings.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ReactionTime_MinTime)).BeginInit();
             this.SequenceMemorySettings.SuspendLayout();
@@ -124,6 +130,7 @@
             this.TypingSettings.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
+            this.LoginControl.SuspendLayout();
             this.SuspendLayout();
             // 
             // ReactionTimeSettings
@@ -727,11 +734,69 @@
             this.numericUpDown3.Size = new System.Drawing.Size(99, 23);
             this.numericUpDown3.TabIndex = 3;
             // 
+            // LoginControl
+            // 
+            this.LoginControl.Controls.Add(this.login_pw);
+            this.LoginControl.Controls.Add(this.label25);
+            this.LoginControl.Controls.Add(this.label24);
+            this.LoginControl.Controls.Add(this.login_id);
+            this.LoginControl.Controls.Add(this.LoginEnabled);
+            this.LoginControl.Location = new System.Drawing.Point(588, 180);
+            this.LoginControl.Name = "LoginControl";
+            this.LoginControl.Size = new System.Drawing.Size(200, 100);
+            this.LoginControl.TabIndex = 13;
+            this.LoginControl.TabStop = false;
+            this.LoginControl.Text = "Login";
+            // 
+            // LoginEnabled
+            // 
+            this.LoginEnabled.AutoSize = true;
+            this.LoginEnabled.Location = new System.Drawing.Point(6, 22);
+            this.LoginEnabled.Name = "LoginEnabled";
+            this.LoginEnabled.Size = new System.Drawing.Size(95, 19);
+            this.LoginEnabled.TabIndex = 0;
+            this.LoginEnabled.Text = "Enable Login";
+            this.LoginEnabled.UseVisualStyleBackColor = true;
+            // 
+            // login_id
+            // 
+            this.login_id.Location = new System.Drawing.Point(71, 43);
+            this.login_id.Name = "login_id";
+            this.login_id.Size = new System.Drawing.Size(100, 23);
+            this.login_id.TabIndex = 1;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(6, 46);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(53, 15);
+            this.label24.TabIndex = 2;
+            this.label24.Text = "Login ID";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(6, 74);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(59, 15);
+            this.label25.TabIndex = 3;
+            this.label25.Text = "Login PW";
+            // 
+            // login_pw
+            // 
+            this.login_pw.Location = new System.Drawing.Point(71, 71);
+            this.login_pw.Name = "login_pw";
+            this.login_pw.PasswordChar = '*';
+            this.login_pw.Size = new System.Drawing.Size(100, 23);
+            this.login_pw.TabIndex = 4;
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.LoginControl);
             this.Controls.Add(this.TypingSettings);
             this.Controls.Add(this.VisualMemorySettings);
             this.Controls.Add(this.ChimpTestSettings);
@@ -785,6 +850,8 @@
             this.TypingSettings.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
+            this.LoginControl.ResumeLayout(false);
+            this.LoginControl.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -855,5 +922,11 @@
         private Label label23;
         private NumericUpDown numericUpDown1;
         private Label label22;
+        private GroupBox LoginControl;
+        private CheckBox LoginEnabled;
+        private TextBox login_id;
+        private Label label24;
+        private Label label25;
+        private TextBox login_pw;
     }
 }
