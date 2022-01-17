@@ -387,7 +387,6 @@
             this.StartDriver.TabIndex = 0;
             this.StartDriver.Text = "Start Driver";
             this.StartDriver.UseVisualStyleBackColor = true;
-            this.StartDriver.Click += new System.EventHandler(this.StartDriver_Click);
             // 
             // QuitDriver
             // 
@@ -397,7 +396,6 @@
             this.QuitDriver.TabIndex = 1;
             this.QuitDriver.Text = "Quit Driver";
             this.QuitDriver.UseVisualStyleBackColor = true;
-            this.QuitDriver.Click += new System.EventHandler(this.QuitDriver_Click);
             // 
             // StartJob
             // 
@@ -407,7 +405,6 @@
             this.StartJob.TabIndex = 2;
             this.StartJob.Text = "Start Test";
             this.StartJob.UseVisualStyleBackColor = true;
-            this.StartJob.Click += new System.EventHandler(this.StartJob_Click);
             // 
             // TestSelection
             // 
@@ -426,7 +423,6 @@
             this.TestSelection.Size = new System.Drawing.Size(105, 23);
             this.TestSelection.TabIndex = 6;
             this.TestSelection.Text = "Reaction Time";
-            this.TestSelection.SelectedIndexChanged += new System.EventHandler(this.TestSelection_SelectedIndexChanged);
             // 
             // label7
             // 
