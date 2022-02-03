@@ -1,2 +1,3 @@
 # HumanBenchmarker
-Automation for [HumanBenchmark](https://humanbenchmark.com)
+Automation for [HumanBenchmark](https://humanbenchmark.com)  
+Used Selenium
